@@ -1,0 +1,155 @@
+ :root {
+    --cream: #fff1e6;
+    --light-brown: #c4a484;
+    --dark-brown: #8b4513;
+    --pink: #f4b6c2;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--cream);
+    color: #4a3b2a;
+    padding: 0px;
+    margin: 0px;
+}
+h1 {
+    font-size: 2.5rem;
+    color: var(--dark-brown);
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: var(--light-brown);
+    margin: 20px 0 10px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #6b3e26;
+    margin-top: 10px;
+}nav {
+    margin: 15px 0;
+}
+ 
+nav a {
+    text-decoration: none;
+    background-color: var(--pink);
+    color: var(--dark-brown);
+    padding: 8px 12px;
+    margin-right: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.hero {
+    background-color: var(--cream);
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    margin: 20px auto 40px auto;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: var(--light-brown);
+    color: white;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+.product-section {
+    margin-bottom: 40px;
+}
+.product-grid{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.product-card{
+    background-color: #f4b6c2;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 2px 8px rgba(0 ,0 ,0 ,0.1);
+}
+.product-card{
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+.product-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.product-card img {
+    transform: transform 0.3s ease;
+}
+.product-card:hover img {
+    transform: scale(1.05);
+}
+.nav-button {
+    text-decoration: none;
+    background-color: var(--pink);
+    color: var(--dark-brown);
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.nav-button:hover {
+    background-color: var(--light-brown);
+    color: white;
+}
+@media (max-width: 900px){
+    .product-card{
+        width: 45%;
+    }
+    .product-grid {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px){
+    body{
+        padding: 10px;
+    }
+    nav{
+        text-align: center;
+    }
+    nav a{
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+    .hero h1{
+        font-size: 2rem;
+    }
+    .hero p{
+        font-size: 1rem;
+    }
+    .product-card{
+        width: 90%;
+    }
+}
