@@ -84,7 +84,7 @@ nav a,
     transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
-/*PSEUDO-CLASSES*/
+/*PSEUDO CLASSES*/
 nav a:hover,
 nav a[aria-current="page"],
 .button:hover {
