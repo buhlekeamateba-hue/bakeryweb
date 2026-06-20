@@ -84,7 +84,7 @@ nav a,
     transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
-/* ================= PSEUDO-CLASSES (MARKING REQUIREMENT BOOST) ================= */
+/*PSEUDO-CLASSES*/
 nav a:hover,
 nav a[aria-current="page"],
 .button:hover {
@@ -101,8 +101,6 @@ main {
 
 section {
     margin-bottom: clamp(34px, 6vw, 64px);
-
-    /* ADDED: helps layout clarity marks */
     scroll-margin-top: 90px;
 }
 
@@ -112,6 +110,11 @@ section {
     display: grid;
     gap: clamp(24px, 5vw, 48px);
     grid-template-columns: minmax(0, 1fr) minmax(280px, 0.9fr);
+    @media (max-width: 860px) {
+        hero{
+            min-height: auto;
+        }
+    }
     min-height: 520px;
 }
 
@@ -159,12 +162,11 @@ p {
     color: var(--muted);
     max-width: 68ch;
 
-    /* ADDED TYPOGRAPHY MARK BOOST */
+    
     font-size: 1rem;
     line-height: 1.7;
 }
 
-/* TYPOGRAPHY MARK BOOST */
 strong {
     color: var(--cocoa);
 }
@@ -197,16 +199,12 @@ strong {
     gap: 20px;
 }
 
-.feature-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.product-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.info-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+.feature-grid,
+.product-grid,
+.info-grid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .feature,
@@ -245,14 +243,11 @@ form {
     padding: 16px;
 }
 
-/* TYPOGRAPHY MARK BOOST */
 .price {
     color: var(--berry);
     font-size: 1.1rem;
     font-weight: 800;
     margin-top: 8px;
-
-    /* ADDED */
     letter-spacing: 0.5px;
 }
 
@@ -412,14 +407,16 @@ footer {
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 860px) {
-    .site-header,
-    .intro {
+    .site-header{
         align-items: flex-start;
         flex-direction: column;
     }
+    .intro {
+        grid-template-columns: 1fr;
+        align-items: start;
+    }
 
     .hero,
-    .intro,
     .info-grid {
         grid-template-columns: 1fr;
     }

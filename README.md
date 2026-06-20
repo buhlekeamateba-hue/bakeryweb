@@ -3,9 +3,8 @@
 # Buhle’s Bakery Website
 
 ## Project Overview
-Buhle’s Bakery is a fictional bakery website designed to showcase baked products such as cakes and cupcakes. The website allows users to browse different cake categories, view prices, and submit enquiries for custom orders.
-
-The goal of this project is to create a simple, user-friendly, and visually appealing website using HTML and CSS.
+Buhle’s Bakery is a fictional bakery website designed to showcase baked products such as cakes and cupcakes. Users can browse products, view pricing, and submit enquiries for custom orders.
+The aim of this project is to build a clean, responsive, and interactive website using HTML, CSS, and JavaScript.
 
 
 
@@ -13,16 +12,20 @@ The goal of this project is to create a simple, user-friendly, and visually appe
 - Name: Sentle Mateba
 - Student Number: ST10500205
 - Module: Web Development
-- Project: POE Part 1 & Part 2
+- Project: POE Part 1, Part 2 & Part 3
 
 
 
 ## Website Goals and Objectives
-- Create a multi-page bakery website
+- Create a fully finctional multi-page bakery website
 - Display bakery products in a structured layout
 - Allow users to navigate easily between pages
 - Provide an enquiry system for custom orders
 - Make the website responsive for different screen sizes
+- Improve interactivity using JavaScript
+- Allow users to search and filter products
+- Ensure working enquiry and contact forms
+- Maintain clean and structured code with proper file organization
 
 
 
@@ -34,7 +37,9 @@ The goal of this project is to create a simple, user-friendly, and visually appe
 - External CSS styling for consistency
 - Enquiry form page for customer requests
 - Contact page with business information
-
+- Basic form validation using JavaScript
+- Responsive design for desktop, tablet, and mobile
+- Improved UI consistency across all pages
 
 
 ## Website Structure (Sitemap)
@@ -54,8 +59,11 @@ The goal of this project is to create a simple, user-friendly, and visually appe
 |__ enquiry.html
 |__ contact.html
 |
-|__css
- __style.css
+|__css/
+   |__style.css
+|
+|__js/
+|  |__script.js
 |
 |__ images/
    |__bento1.jpg
@@ -73,8 +81,8 @@ The goal of this project is to create a simple, user-friendly, and visually appe
 - Responsive layout using Flexbox
 - External CSS for styling
 - Internal CSS for demonstration
-- In;ine CSS for small styling examples
-
+- Inline CSS for small styling examples
+- Enhanced user experience with hover effects and transitions
 
 
 ## Responsive Design
@@ -83,7 +91,6 @@ The website is responsive and adapts to different screen sizes:
 - Desktop: 3 product cards per row
 - Tablet: 2 product cards per row
 - Mobile: 1 product per row
-
 Media queries are used to adjust layout and font sizes.
 
 ## CSS Usage
@@ -91,6 +98,14 @@ This project demonstrates:
 - External CSS
 - Internal CSS
 - Inline CSS 
+
+## JavaScript Features
+This project includes:
+- Product search/filter functionality
+- Form interaction handling (contact + enquiry forms)
+- Basic input validation
+- Improved user feedback for form submissions
+
 
 ## Changelog
 
@@ -111,14 +126,19 @@ This project demonstrates:
 - Implemented responsive design using media queries
 - Enhanced typography and layout consistency
 
-
+### Part 3
+- Fixed issues from Part 2 (content text)
+- Added JavaScript functionality
+- Implemented product search/filter system
+- Improved responsiveness and usability
+- Better code structure and folder organisation
+- Increased commit history showing development progress
+- Improved overall UI consistency and user experience
 
 ## References
 - W3Schools
 - Free images from pinterest
-- HTML & CSS documentation (MDN Web Docs)
-
-
+- HTML, CSS & JavaScript documentation (MDN Web Docs)
 
 ## Notes
-This project is still in development and will continue to be improved in part 3 of the POE.
+This project is the final version of the POE assignment. It demonstrates improved structure, interactivity, and responsiveness using HTML, CSS, and JavaScript.
