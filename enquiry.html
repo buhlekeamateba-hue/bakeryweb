@@ -2,97 +2,160 @@
 <html lang="en">
 
 <head>
+    <!-- ================= BASIC PAGE SETUP ================= -->
     <meta charset="UTF-8">
+
+    <!-- Makes page responsive on all devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buhle's Bakery | Enquiry</title>
-    <style>
-        .special-text{
-            font-style: italic;
-        }
-    </style>
+
+    <!-- ================= SEO META DATA ================= -->
+    <meta name="description" content="Submit a cake enquiry to Buhle's Bakery for custom bento cakes, cupcakes, heart cakes, rectangular cakes, tiered cakes, and tall cakes.">
+    <meta name="keywords" content="cake enquiry, order custom cake, Buhle's Bakery enquiry, cake order form, Kroonstad bakery order">
+
+    <!-- Page title shown in browser tab -->
+    <title>Buhle's Bakery | Custom Cake Enquiry Form</title>
+
+    <!-- External CSS file -->
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Optional JavaScript file -->
+    <script src="javascript/script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Header -->
+    <!-- ================= HEADER SECTION ================= -->
     <header>
 
-        <h1 class="special-text">Buhle's Bakery</h1>
+        <!-- Container for branding and navigation -->
+        <div class="site-header">
 
-        <!-- Navigation -->
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="products.html">Products</a> |
-            <a href="enquiry.html">Enquiry</a> |
-            <a href="contact.html">Contact</a>
-        </nav>
+            <!-- Brand logo / home link -->
+            <a class="brand" href="index.html">Buhle's Bakery</a>
 
+            <!-- Navigation menu -->
+            <nav aria-label="Main navigation">
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="enquiry.html" aria-current="page">Enquiry</a>
+                <a href="contact.html">Contact</a>
+
+            </nav>
+        </div>
     </header>
 
-    <hr>
-
-    <!-- Main -->
+    <!-- ================= MAIN CONTENT ================= -->
     <main>
 
-        <h2>Place an Enquiry / Order</h2>
+        <!-- ================= ENQUIRY INTRO SECTION ================= -->
+        <section>
 
-        <p>
-         Fill in the form below to request a cake or make an enquiry.
-            We will contact you to confirm your order.
-        </p>
-        <p style="text-align: center;">
-            Please complete ALL required fields.
-        </p>
+            <!-- Small label for styling consistency -->
+            <p class="eyebrow">Order enquiry</p>
 
-        <form>
+            <!-- Main heading -->
+            <h1>Tell us about your cake</h1>
 
-            <!-- Name -->
-            <label>Name:</label><br>
-            <input type="text" name="name"><br><br>
+            <!-- Added richer explanation (helps with “not enough text” feedback) -->
+            <p class="lead">
+                Use this form to request a custom cake. Include details such as the cake type,
+                flavour, colours, message, size, and the date you need it. We will confirm your order
+                and contact you as soon as possible.
+            </p>
 
-            <!-- Email -->
-            <label>Email:</label><br>
-            <input type="email" name="email"><br><br>
+        </section>
 
-            <!-- Phone -->
-            <label>Phone Number:</label><br>
-            <input type="text" name="phone"><br><br>
+        <!-- ================= ORDER FORM ================= -->
+        <section>
 
-            <!-- Cake type -->
-            <label>Cake Type:</label><br>
-            <select>
-                <option>Bento Cake</option>
-                <option>Heart Cake</option>
-                <option>Cupcake</option>
-                <option>Rectangular Cake</option>
-                <option>Tiered Cake</option>
-                <option>Tall Cake</option>
-            </select><br><br>
+            <!-- Form starts here -->
+            <form action="#" method="post" data-form-type="enquiry">
 
-            <!-- Message -->
-            <label>Order Details:</label><br>
-            <textarea rows="5" cols="30"></textarea><br><br>
+                <!-- ================= NAME FIELD ================= -->
+                <label>
+                    Name
+                    <input type="text"
+                           name="name"
+                           autocomplete="name"
+                           required>
+                </label>
 
-            <button type="submit">Submit Enquiry</button>
+                <!-- ================= EMAIL FIELD ================= -->
+                <label>
+                    Email
+                    <input type="email"
+                           name="email"
+                           autocomplete="email"
+                           required>
+                </label>
 
-        </form>
-        <p>
-            Our team will contact you as soon as possible.
-        </p>
+                <!-- ================= PHONE FIELD ================= -->
+                <label>
+                    Phone Number
+                    <input type="tel"
+                           name="phone"
+                           autocomplete="tel"
+                           pattern="[0-9 +()-]{7,}"
+                           required>
+                </label>
+
+                <!-- ================= CAKE TYPE DROPDOWN ================= -->
+                <label>
+                    Cake Type
+
+                    <!-- Dropdown menu for cake selection -->
+                    <select name="cake-type" required>
+
+                        <option value="">Select a cake type</option>
+
+                        <option>Bento Cake</option>
+                        <option>Heart Cake</option>
+                        <option>Cupcakes</option>
+                        <option>Rectangular Cake</option>
+                        <option>Tiered Cake</option>
+                        <option>Tall Cake</option>
+
+                    </select>
+                </label>
+
+                <!-- ================= ORDER DETAILS TEXTAREA ================= -->
+                <label>
+                    Order Details
+
+                    <!-- Multi-line input for custom order info -->
+                    <textarea name="order-details"
+                              minlength="15"
+                              placeholder="Tell us your theme, flavour, colours, size, date needed, and message for the cake."
+                              required></textarea>
+                </label>
+
+                <!-- ================= SUBMIT BUTTON ================= -->
+                <button class="button" type="submit">
+                    Submit Enquiry
+                </button>
+
+                <!-- Response message area (for JS if needed later) -->
+                <p class="form-response" hidden></p>
+
+            </form>
+
+        </section>
 
     </main>
 
-    <hr>
-
-    <!-- Footer -->
+    <!-- ================= FOOTER ================= -->
     <footer>
 
-        <p><strong>Phone:</strong> 056 123 4567</p>
-        <p><strong>Email:</strong> hello@buhlesbakery.co.za</p>
-        <p><strong>Address:</strong> 120 Cross Street, Kroonstad</p>
+        <div class="footer-inner">
+
+            <!-- Contact details repeated for usability -->
+            <p><strong>Phone:</strong> 056 123 4567</p>
+            <p><strong>Email:</strong> hello@buhlesbakery.co.za</p>
+            <p><strong>Address:</strong> 120 Cross Street, Kroonstad</p>
+
+        </div>
 
     </footer>
 

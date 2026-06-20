@@ -2,129 +2,198 @@
 <html lang="en">
 
 <head>
+    <!-- Basic page information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buhle's Bakery | About Us</title>
-    <style>
-        .special-text{
-            font-style: italic;
-        }
-    </style>
+
+    <!-- SEO -->
+    <meta name="description" content="Learn about Buhle's Bakery, a creative local bakery offering custom birthday cakes, wedding cakes, bento cakes, cupcakes, and celebration cakes.">
+    <meta name="keywords" content="about Buhle's Bakery, bakery mission, custom cakes, Kroonstad cakes, cupcakes, celebration cakes">
+
+    <title>Buhle's Bakery | About Our Custom Bakery</title>
+
+    <!-- External CSS and JavaScript -->
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Header -->
+    <!-- Website Header -->
     <header>
+        <div class="site-header">
+            <a class="brand" href="index.html">Buhle's Bakery</a>
 
-        <h1 class="special-text">Buhle's Bakery</h1>
-
-        <!-- Navigation menu -->
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="products.html">Products</a> |
-            <a href="enquiry.html">Enquiry</a> |
-            <a href="contact.html">Contact</a>
-        </nav>
-
+            <!-- Navigation Menu -->
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html" aria-current="page">About</a>
+                <a href="products.html">Products</a>
+                <a href="enquiry.html">Enquiry</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <hr>
-
-    <!-- Main content -->
     <main>
 
-        <!-- About section -->
+        <!-- Hero Section -->
+        <section class="hero">
+            <div>
+                <p class="eyebrow">About us</p>
+
+                <h1>A small bakery with a big celebration spirit</h1>
+
+                <p class="lead">
+                    Buhle's Bakery began in 2022 as a home-based bakery serving cakes and cupcakes to the local community.
+                    It has grown into a trusted neighbourhood business known for quality, affordability, and beautiful cake designs.
+                </p>
+            </div>
+
+            <img src="images/cup1.jpg"
+                alt="Decorated cupcake set from Buhle's Bakery">
+        </section>
+
+        <!-- Our Story -->
         <section>
-
-            <h2>About Us</h2>
+            <h2>Our Story</h2>
 
             <p>
-                Buhle’s Bakery is a fictional small business established in 2022.
-                What started as a home-based bakery selling cakes and cupcakes to the local community, quickly grew into a trusted 
-                neighbourhood business known for quality, Affordability, and Beautiful cake designs.
+                What started as a passion for baking at home has grown into a small business serving customers throughout
+                Kroonstad. Every cake is made using fresh ingredients, attention to detail, and a commitment to making every
+                celebration memorable.
             </p>
 
             <p>
-                Our passion for baking and creativity allows us to create cakes that make every celebration memorable.
-                 We believe that every cake should not only taste delicious but look beautiful and unique!
-                
+                We enjoy working closely with customers to create personalised cakes that reflect their preferred colours,
+                themes, flavours, and unique ideas for every occasion.
             </p>
+        </section>
+
+        <!-- Mission and Vision -->
+        <section class="info-grid">
+
+            <article class="info-panel">
+                <h2>Our Mission</h2>
+
+                <p>
+                    To provide fresh, high-quality baked goods made with love and passion while delivering excellent
+                    customer service to every customer.
+                </p>
+            </article>
+
+            <article class="info-panel">
+                <h2>Our Vision</h2>
+
+                <p>
+                    To become a leading bakery brand known for delicious products, creative designs,
+                    and strong community connections.
+                </p>
+            </article>
 
         </section>
 
-        <hr>
-
-        <!-- Mission -->
+        <!-- Products and Services -->
         <section>
 
-            <h2>Our Mission</h2>
+            <p class="eyebrow">What we offer</p>
 
-            <p>
-                To provide fresh, high-quality baked goods made with love and passion while delivering excellent customer service to every customer.
-            </p>
+            <h2>Cakes for every occasion</h2>
+
+            <div class="feature-grid">
+
+                <article class="feature">
+                    <h3>Birthday Cakes</h3>
+                    <p>
+                        Custom cakes with colours, messages, and decorations made especially for birthdays and celebrations.
+                    </p>
+                </article>
+
+                <article class="feature">
+                    <h3>Wedding Cakes</h3>
+                    <p>
+                        Elegant tiered cakes designed for intimate weddings and large celebrations.
+                    </p>
+                </article>
+
+                <article class="feature">
+                    <h3>Bento Cakes</h3>
+                    <p>
+                        Small, personal cakes that make thoughtful gifts and sweet treats for any occasion.
+                    </p>
+                </article>
+
+                <article class="feature">
+                    <h3>Cupcakes</h3>
+                    <p>
+                        Fresh cupcakes available in a variety of colours, flavours, and decorative styles.
+                    </p>
+                </article>
+
+            </div>
 
         </section>
 
-        <hr>
-
-        <!-- Vision -->
+        <!-- Why Choose Us -->
         <section>
 
-            <h2>Our Vision</h2>
+            <p class="eyebrow">Why choose us</p>
 
-            <p>
-                To become a leading bakery brand known for delicious products, innovation, and strong community connections.
-            </p>
-
-        </section>
-
-        <hr>
-        <!--What the bakery offers-->
-        <section>
-            <h2>What We Offer</h2>
+            <h2>Why customers trust Buhle's Bakery</h2>
 
             <ul>
-                <li>Custom birthday cakes</li>
-                <li>Wedding cakes</li>
-                <li>Bento cakes</li>
-                <li>Heart cakes</li>
-                <li>Cupcakes</li>
-                <li>Celebration cakes for all occations</li>
-                <h3 style="color: #8b1349;">
-                AVAILABLE IN ANY FLAVOUR OF YOUR CHOICE!❤️
-                </h3>
+                <li>Freshly baked for every order</li>
+                <li>Affordable prices for every budget</li>
+                <li>Custom cake designs for any celebration</li>
+                <li>Friendly and reliable customer service</li>
+                <li>Quality ingredients and attention to detail</li>
             </ul>
+
         </section>
 
-        <!-- Values -->
+        <!-- Bakery Values -->
         <section>
 
-            <h2>Our Values</h2>
+            <p class="eyebrow">Our values</p>
 
-            <ul>
-                <li>Quality baking</li>
-                <li>Customer satisfaction</li>
-                <li>Creativity in design</li>
-                <li>Affordability</li>
-            </ul>
+            <h2>Quality, creativity, and care</h2>
+
+            <p>
+                Every order is prepared with attention to taste, presentation, and customer satisfaction.
+                We believe every celebration deserves a cake that looks beautiful, tastes delicious,
+                and creates lasting memories.
+            </p>
 
         </section>
-        
+
+        <!-- Call to Action -->
+        <section class="cta">
+
+            <h2>Let's Create Your Perfect Cake</h2>
+
+            <p>
+                Browse our products or contact us today to discuss a custom cake created especially
+                for your celebration.
+            </p>
+
+            <a class="button" href="products.html">View Our Products</a>
+
+        </section>
 
     </main>
 
-    <hr>
-
-    <!-- Footer -->
+    <!-- Website Footer -->
     <footer>
 
-        <p><strong>Phone:</strong> 056 123 4567</p>
-        <p><strong>Email:</strong> hello@buhlesbakery.co.za</p>
-        <p><strong>Address:</strong> 120 Cross Street, Kroonstad</p>
+        <div class="footer-inner">
+
+            <p><strong>Phone:</strong> 056 123 4567</p>
+
+            <p><strong>Email:</strong> hello@buhlesbakery.co.za</p>
+
+            <p><strong>Address:</strong> 120 Cross Street, Kroonstad</p>
+
+        </div>
 
     </footer>
 

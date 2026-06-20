@@ -102,6 +102,8 @@ This project demonstrates:
 
 ### Part 2
 - Fixed the wrongs in part 1
+- Added more content
+- Added more commits changes of my code
 - Linked external CSS stylesheet
 - Improved design using Flexbox
 - Added hover effects on product cards
@@ -112,8 +114,8 @@ This project demonstrates:
 
 
 ## References
-- Lecture notes and module material
-- Free images from public domain sources
+- W3Schools
+- Free images from pinterest
 - HTML & CSS documentation (MDN Web Docs)
 
 
