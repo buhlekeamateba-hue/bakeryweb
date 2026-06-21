@@ -135,6 +135,9 @@ This project includes:
 - Increased commit history showing development progress
 - Improved overall UI consistency and user experience
 
+  ##Deployment
+  https://webdevpoe.netlify.app/
+
 ## References
 - W3Schools
 - Free images from pinterest
